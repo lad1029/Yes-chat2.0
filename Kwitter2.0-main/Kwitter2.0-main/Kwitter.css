@@ -1,0 +1,119 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+body
+{
+background-image: linear-gradient(to right top, #4d0e02, #5f1b00, #ffee00, #00ff80, #00b7ff, #8454ff, #d754ff);
+}
+
+.header
+{
+	color: rgba(255, 255, 255, 0); font-family: 'Alfa Slab One', cursive; ;font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+.header img
+{
+	width: 80px;margin-left: -15px;
+}
+
+.login_div
+{
+	background: rgba(207, 0, 0, 0.212);float: none;border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+
+#login_button
+{
+	width: 80%;border-radius: 15px; font-family: 'Montserrat', sans-serif;
+}
+
+.room_name
+{
+	cursor: pointer;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+#logout
+{
+	font-size: 20px; 	font-family: 'Montserrat', sans-serif;	float: right;
+}
+
+
+#output
+{
+	padding: 10px; width:80%;background: rgb(129, 8, 8);border-radius: 15px;
+}
+
+.input_div_room_page
+{
+	width: 80%;
+}
+
+.input_div label
+{
+	color: rgb(255, 255, 255);font-size: 20px; font-family: 'Montserrat', sans-serif;
+}
+
+
+.input_div_message_page
+{
+	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
+}
+.input_div_message_page label
+{
+	color: rgb(27, 6, 6); 
+}
+.input_div_message_page #msg
+{
+	width: 80%;
+}
+.input_div_message_page button
+{
+	margin-top: 15px;
+	width: 50%; 
+}
+.color_white
+{
+	color: white
+}
+
+.user_tick
+{
+	width:20px;
+}
+.message_h4
+{
+	padding-left:5px;color:grey; font-family: 'Montserrat', sans-serif;
+}
+
+#label1
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#label2
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#label3
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#label14
+{
+	font-family: 'Montserrat', sans-serif;
+
+}

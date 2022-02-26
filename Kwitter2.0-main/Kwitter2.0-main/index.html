@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Kwitter</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="Kwitter.css">
+<script src="Kwitter.js"></script>
+</head>
+<body>
+<center>
+	<h1 class="header">	
+        <img src="https://img.icons8.com/color/48/000000/heart-rainbow.png"/>
+		Kwitter	<sup>
+        <img src="https://img.icons8.com/color/48/000000/heart-rainbow.png"/>
+	</sup>
+</h1>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+		<img src="https://img.icons8.com/dusk/64/000000/drawing.png"/>
+		<h3 id="label1">See what is happening in the world right now</h3>
+		<h4 id="label2">Join Kwitter today</h4>
+		<div class="form-group">
+		  <label id="label3">User Name:</label>
+		  <input class="form-control" id="user_name">
+
+		</div>
+		<button onclick="addUser()" id="login_button" class="btn btn-primary">Log in</button>
+		<br><br>
+	</div>
+</center>
+</body>
+	<script>
+		
+	const firebaseConfig = {
+    apiKey: "AIzaSyD596uAvFo4Ql4EkgWXfSy34j8du8dgAu8",
+    authDomain: "kwitter-f02eb.firebaseapp.com",
+    databaseURL: "https://kwitter-f02eb-default-rtdb.firebaseio.com",
+    projectId: "kwitter-f02eb",
+    storageBucket: "kwitter-f02eb.appspot.com",
+    messagingSenderId: "30287991375",
+    appId: "1:30287991375:web:91c1449bfdd5c1ae34d03a",
+    measurementId: "G-CYXL0F24RV"
+  };
+  
+  // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);	
+function addUser()
+{
+    user_name=document.getElementById("user_name").value ;
+    
+//     firebase.database().ref("/").child(user_name).update({
+//     purpose : "adding user name"
+// });
+    localStorage.setItem("user_name", user_name);
+    window.location="kwitter_room.html";
+}
+		
+		
+	</script>
+</html>>
